@@ -1,0 +1,22 @@
+body {
+  /* font-size: xx-large; */
+  font-weight: bold !important;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --col-pur: #5267df;
+  --col-red: #fa5959; /* Custom color variable */
+  --col-blue: #242a45;
+  --col-grey: #9194a2;
+  --col-white: #f7f7f7;
+  --col-whi: #b6b5b5;
+}
+nav {
+  margin: auto;
+}
+.btn {
+  border: #f7f7f7 2px solid;
+}
+.btn:hover {
+  opacity: 0.8;
+}

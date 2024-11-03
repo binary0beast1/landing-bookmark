@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boockmark landing page</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^3.3.3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-1">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- header -->
+    <header class="p-2">
+      <nav
+        class="container flex justify-between items-center px-3 py-4 mt-4 sm:mt-12"
+      >
+        <div class="py-1">
+          <img src="logo-bookmark.svg" alt="logo" />
+        </div>
+        <ul
+          class="list-none text-xs uppercase text-[var(--col-blue)] hidden sm:flex flex-1 justify-end items-center gap-12"
+        >
+          <li class="cursor-pointer" id="#features">features</li>
+          <li class="cursor-pointer" id="#pricing">pricing</li>
+          <li class="cursor-pointer" id="#contact">contact</li>
+          <button
+            type="button"
+            class="uppercase bg-[var(--col-red)] text-white rounded-md px-7 py-3"
+          >
+            login
+          </button>
+        </ul>
+        <div class="flex sm:hidden flex-1 justify-end">
+          <i class="fas text-2xs fa-bars text-purple-600"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- main hero -->
+    <section class="relative p-4">
+      <div
+        class="m-auto container flex flex-col-reverse lg:flex-row items-center gap-12vmt-14 lg:mt-28"
+      >
+        <!-- content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h2
+            class="text-slate-700 text-[var(--col-blue)] text-3xs md:text-4xl lg:text-5xl text-center lg:text-left mb-6"
+          >
+            A SIMPLE BOOKMARK MANAGER
+          </h2>
+          <p
+            class="text-lg text-slate-400 text-center lg:text-left mb-6 text-[var(--col-gray )]"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+            ratione autem! Aliquam recusandae alias sapiente .
+          </p>
+          <div
+            class="flex text-2xs justify-center flex-wrap gap-6 text-white py-3 px-6"
+          >
+            <button
+              type="button"
+              class="btn p-2 bg-[var(--col-pur)] shadow-md rounded-md"
+            >
+              GET IT ON CHROME
+            </button>
+            <button
+              type="button"
+              class="p-2 btn bg-[var(--col-whi)] shadow-md rounded-md"
+            >
+              GET IT ON OTHER..
+            </button>
+          </div>
+        </div>
+        <!--  img -->
+        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+          <img
+            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            src="hero-bg.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!-- rounded bag lg:-right-36-->
+      <div
+        class="hidden md:block overflow-hidden bg-[var(--col-pur)] rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28"
+      ></div>
+    </section>
+    <!-- features -->
+    <section id="features" class="bg-[var(--col-white)] py-20 mt-20 lg:mt-60">
+      <!-- heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-[var(--col-blue)]">features</h1>
+        <p class="text-center text-[var(--col-grey)] mt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fuga
+          voluptas iste at nemo Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <!-- feature 1  -->
+      <div class="relative mt-20 lg:mt-24">
+        <div
+          class="m-auto container flex flex-col lg:flex-row items-center justify-center gap-x-24"
+        >
+          <!-- image -->
+          <div class="flex-1 flex justify-center z-10 mb-10 lg:mb-0">
+            <img
+              src="illustration-features-tab-1.png"
+              alt="fet-1"
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            />
+          </div>
+          <!-- content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-[var(--col-blue)]">
+              BOOKmark in one click
+            </h1>
+            <p
+              class="text-[var(--col-grey)] my-4 text-center lg:text-left sm:w-3/4 lg:w-full"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem nam vitae ullam temporibus, dolor quis Lorem ipsum
+              dolor sit amet consectetur.
+            </p>
+            <button
+              type="button"
+              class="btn p-2 text-white bg-[var(--col-pur)] shadow-md rounded-md"
+            >
+              More Info..
+            </button>
+          </div>
+        </div>
+        <!-- rounded bag -->
+        <div
+          class="hidden lg:block overflow-hidden bg-[var(--col-pur)] rounded-r-full absolute h-80 w-2/4 -bottom-28 -left-36"
+        ></div>
+      </div>
+      <!-- feature 2  -->
+      <div class="relative mt-20 lg:mt-52">
+        <div
+          class="m-auto container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24"
+        >
+          <!-- image -->
+          <div class="flex-1 flex justify-center z-10 mb-10 lg:mb-0">
+            <img
+              src="illustration-features-tab-2.png"
+              alt="fet-1"
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            />
+          </div>
+          <!-- content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-[var(--col-blue)]">Intelligent search</h1>
+            <p
+              class="text-[var(--col-grey)] my-4 text-center lg:text-left sm:w-3/4 lg:w-full"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem nam vitae ullam temporibus, dolor quis Lorem ipsum
+              dolor sit amet consectetur.
+            </p>
+            <button
+              type="button"
+              class="btn p-2 text-white bg-[var(--col-pur)] shadow-md rounded-md"
+            >
+              More Info..
+            </button>
+          </div>
+        </div>
+        <!-- rounded bag -right-36-->
+        <div
+          class="hidden lg:block overflow-hidden bg-[var(--col-pur)] rounded-l-full absolute h-80 w-2/4 -bottom-28 -right-0"
+        ></div>
+      </div>
+      <!-- feature 3 -->
+      <div class="relative mt-20 lg:mt-52">
+        <div
+          class="m-auto container flex flex-col lg:flex-row items-center justify-center gap-x-24"
+        >
+          <!-- image -->
+          <div class="flex-1 flex justify-center z-10 mb-10 lg:mb-0">
+            <img
+              src="illustration-features-tab-3.png"
+              alt="fet-1"
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            />
+          </div>
+          <!-- content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-[var(--col-blue)]">SHare Your BOOKMARK</h1>
+            <p
+              class="text-[var(--col-grey)] my-4 text-center lg:text-left sm:w-3/4 lg:w-full"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem nam vitae ullam temporibus, dolor quis Lorem ipsum
+              dolor sit amet consectetur.
+            </p>
+            <button
+              type="button"
+              class="btn p-2 text-white bg-[var(--col-pur)] shadow-md rounded-md"
+            >
+              More Info..
+            </button>
+          </div>
+        </div>
+        <!-- rounded bag -->
+        <div
+          class="hidden lg:block overflow-hidden bg-[var(--col-pur)] rounded-r-full absolute h-80 w-2/4 -bottom-28 -left-36"
+        ></div>
+      </div>
+    </section>
+    <!-- dowlownd caeds -->
+    <section class="py-20 mt-20" id="pricing">
+      <!-- heading  -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-[var(--col-blue)]">
+          Download the extension
+        </h1>
+        <p class="text-center text-[var(--col-grey)] mt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fuga
+          voluptas iste at nemo Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <!-- the browsers  cards-->
+      <div
+        class="m-auto container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16"
+      >
+        <!-- card1 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mb-16">
+          <div class="p-6 flex flex-col items-center">
+            <img src="logo-chrome.svg" alt="chrom" />
+            <h3 class="mt-5 mb-2 text-[var(--col-blue)] text-lg">
+              ADD TO CHROM
+            </h3>
+            <p class="mb-2 text-[var(--col-grey)] font-light">
+              minimum version.10
+            </p>
+          </div>
+          <hr class="border-b border-[var(--col-white)]" />
+
+          <div class="flex p-6">
+            <button
+              type="button"
+              class="flex-1 uppercase btn p-2 text-white bg-[var(--col-pur)] hover:bg-[var(--col-white)] hover:text-black shadow-md rounded-md"
+            >
+              ADD extension NOW
+            </button>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mt-8 lg:mb-8">
+          <div class="p-6 flex flex-col items-center">
+            <img src="logo-opera.svg" alt="OPERA" />
+            <h3 class="mt-5 mb-2 text-[var(--col-blue)] text-lg">
+              ADD TO OPERA
+            </h3>
+            <p class="mb-2 text-[var(--col-grey)] font-light">
+              minimum version.10
+            </p>
+          </div>
+          <hr class="border-b border-[var(--col-white)]" />
+
+          <div class="flex p-6">
+            <button
+              type="button"
+              class="flex-1 uppercase btn p-2 text-white bg-[var(--col-pur)] hover:bg-[var(--col-white)] hover:text-black shadow-md rounded-md"
+            >
+              install extension NOW
+            </button>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mt-16">
+          <div class="p-6 flex flex-col items-center">
+            <img src="logo-firefox.svg" alt="FIREFOX" />
+            <h3 class="mt-5 mb-2 text-[var(--col-blue)] text-lg">
+              ADD TO FIREFOX
+            </h3>
+            <p class="mb-2 text-[var(--col-grey)] font-light">
+              minimum version.10
+            </p>
+          </div>
+          <hr class="border-b border-[var(--col-white)]" />
+
+          <div class="flex p-6">
+            <button
+              type="button"
+              class="flex-1 uppercase btn p-2 text-white bg-[var(--col-pur)] hover:bg-[var(--col-white)] hover:text-black shadow-md rounded-md"
+            >
+              ADD extension NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- chose selections-->
+    <section class="bg-[var(--col-white)] py-20">
+      <div class="container">
+        <!-- heading  -->
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+          <h1 class="text-3xl text-center text-[var(--col-blue)]">
+            FREE TO ASK QUESTIONS
+          </h1>
+          <p class="text-center text-[var(--col-grey)] mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fuga
+            voluptas iste at nemo Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <!-- QS -->
+        <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
+          <div class="flex items-center border-b py-4">
+            <span class="flex-1">WHAT IS BOOKMARK ?</span>
+            <i class="fa-solid fa-chevron-down text-purple-600 text-2xl"></i>
+          </div>
+          <div class="flex items-center border-b py-4">
+            <span class="flex-1 uppercase"
+              >How can i request a new brpwser?</span
+            >
+            <i class="fa-solid fa-chevron-down text-purple-600 text-2xl"></i>
+          </div>
+          <div class="flex items-center border-b py-4">
+            <span class="flex-1 uppercase">is there a mobille app?</span>
+            <i class="fa-solid fa-chevron-down text-purple-600 text-2xl"></i>
+          </div>
+          <button
+            type="button"
+            class="mt-12 flex self-center uppercase btn p-2 text-white bg-[var(--col-pur)] hover:bg-[var(--col-white)] hover:text-black shadow-md rounded-md"
+          >
+            MORE DETAILS
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- fotter&contact us -->
+    <section id="contact" class="bg-[var(--col-pur)] text-white py-20">
+      <div class="container p-2">
+        <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+          <p class="font-light uppercase text-center mb-8">
+            + 3K.5 already joined
+          </p>
+          <h1 class="text-3xl text-center">
+            Stay Up-To-Date with what we're doing
+          </h1>
+          <div class="flex flex-col sm:flex-row gap-6 mt-8">
+            <input
+              type="text"
+              placeholder="ENTER YOUR EMAIL ADRESS"
+              class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+            />
+            <button
+              type="button"
+              class="flex self-center btn p-2 bg-[var(--col-red)] shadow-md rounded-md hover:text-black hover:bg-white"
+            >
+              CONTACT US HERE
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- last footer -->
+    <footer class="bg-[var(--col-blue)] py-8 m-auto">
+      <div class="container m-auto flex flex-col md:flex-row items-center">
+        <div
+          class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12"
+        >
+          <img src="logo-bookmark-white.png" alt="logo" />
+          <ul class="list-none text-xs uppercase text-white flex gap-12">
+            <li class="cursor-pointer" id="#features">features</li>
+            <li class="cursor-pointer" id="#pricing">pricing</li>
+            <li class="cursor-pointer" id="#contact">contact</li>
+          </ul>
+        </div>
+        <div class="flex gap-10 mt-12 md:mt-0">
+          <i
+            class="fa-brands fa-facebook hover:text-3xs hover:text-white text-blue-600 text-2xl"
+          ></i>
+          <i
+            class="fa-brands fa-instagram text-pink-500 text-2xl hover:text-3xs hover:text-white"
+          ></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
